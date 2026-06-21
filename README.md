@@ -1,6 +1,6 @@
 # Line Arranger
 
-A small browser tool for cutting up and rearranging found lines and words into a poem or lyric — inspired by the stream-of-consciousness, cut-up methods used by Bowie and OMD: write down lines as they come, then physically move them around until something sticks.
+A small browser tool for cutting up and rearranging found lines and words into a poem or lyric - inspired by the stream-of-consciousness, cut-up methods used by Bowie and OMD: write down lines as they come, then physically move them around until something sticks.
 
 No build step, no dependencies, no server. Open it and start arranging.
 
