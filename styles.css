@@ -304,6 +304,22 @@ footer {
   background: rgba(217, 83, 79, 0.15);
 }
 
+.credit {
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  margin: 0 0 1.5rem;
+}
+
+.credit a {
+  color: var(--text-dim);
+  text-decoration: underline;
+}
+
+.credit a:hover {
+  color: var(--accent);
+}
+
 #toast {
   position: fixed;
   bottom: 1.25rem;
