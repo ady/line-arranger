@@ -30,6 +30,12 @@ header {
   text-align: center;
 }
 
+.logo {
+  display: block;
+  margin: 0 auto 0.5rem;
+  border-radius: 12px;
+}
+
 header h1 {
   margin: 0;
   font-size: 1.6rem;

@@ -95,7 +95,7 @@
     const moveBtn = document.createElement("button");
     moveBtn.className = "move-btn";
     moveBtn.textContent = zone === "inbox" ? "→" : "←";
-    moveBtn.title = zone === "inbox" ? "Send to page" : "Send back to inbox";
+    moveBtn.title = zone === "inbox" ? "Send to arrangement" : "Send back to fragments";
     moveBtn.addEventListener("click", () => {
       moveCard(item.id, zone === "inbox" ? "page" : "inbox");
     });
@@ -293,7 +293,7 @@
     const count = addLinesToInbox(bulkInput.value);
     if (count > 0) {
       bulkInput.value = "";
-      showToast(`Added ${count} line${count === 1 ? "" : "s"} to inbox`);
+      showToast(`Added ${count} line${count === 1 ? "" : "s"} to fragments`);
     }
   });
 
@@ -312,7 +312,7 @@
 
   document.getElementById("export-text-btn").addEventListener("click", () => {
     const text = state.page.map((c) => c.text).join("\n");
-    downloadFile(text, "poem.txt", "text/plain");
+    downloadFile(text, "arrangement.txt", "text/plain");
   });
 
   document.getElementById("export-json-btn").addEventListener("click", () => {
@@ -342,7 +342,7 @@
   });
 
   document.getElementById("clear-btn").addEventListener("click", () => {
-    if (!confirm("Clear all lines from the inbox and page? This cannot be undone.")) return;
+    if (!confirm("Clear all lines from the fragments and arrangement? This cannot be undone.")) return;
     state = { inbox: [], page: [] };
     saveState();
     render();

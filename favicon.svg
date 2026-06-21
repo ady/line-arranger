@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#15151a"/>
+
+  <!-- three cut-up scraps of paper, scattered, evoking lines being rearranged -->
+  <g>
+    <rect x="8" y="12" width="32" height="11" rx="2.5" fill="#9a98a6" transform="rotate(-8 24 17.5)"/>
+    <rect x="16" y="26" width="40" height="13" rx="2.5" fill="#e8b14a" transform="rotate(5 36 32.5)"/>
+    <rect x="11" y="41" width="28" height="11" rx="2.5" fill="#ECEAE6" transform="rotate(-4 25 46.5)"/>
+  </g>
+</svg>

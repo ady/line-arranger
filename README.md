@@ -8,11 +8,11 @@ No build step, no dependencies, no server. Open it and start arranging.
 
 Open [`index.html`](index.html) in a browser, or serve the folder with any static file server.
 
-- **Add lines** — paste a block of text into the Inbox box and click *Add All* (it splits on line breaks), or type a single line/word into the quick-add field and press Enter.
-- **Arrange** — drag cards between the Inbox and the Page, and reorder within either list by dragging. Each card also has `→`/`←` buttons for moving without drag-and-drop (handy on mobile).
-- **Edit** — double-click any card's text, in the Inbox or on the Page, to edit it in place. Enter saves, Esc cancels.
+- **Add lines** — paste a block of text into the Fragments box and click *Add All* (it splits on line breaks), or type a single line/word into the quick-add field and press Enter.
+- **Arrange** — drag cards between Fragments and the Arrangement, and reorder within either list by dragging. Each card also has `→`/`←` buttons for moving without drag-and-drop (handy on mobile).
+- **Edit** — double-click any card's text, in Fragments or in the Arrangement, to edit it in place. Enter saves, Esc cancels.
 - **Delete** — the `✕` button on a card removes it.
-- **Save your work** — everything autosaves to the browser's local storage as you go. Use *Export poem (.txt)* to download the Page as plain text, or *Save project (.json)* to save the full Inbox + Page state and reload it later with *Load project*.
+- **Save your work** — everything autosaves to the browser's local storage as you go. Use *Export arrangement (.txt)* to download the Arrangement as plain text, or *Save progress for later (.json)* to save the full Fragments + Arrangement state and reload it later with *Load saved progress*.
 
 ## Notes
 

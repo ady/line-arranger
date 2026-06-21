@@ -4,19 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Line Arranger</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
+  <img class="logo" src="favicon-512.png" alt="" width="56" height="56">
   <h1>Line Arranger</h1>
-  <p class="tagline">Cut-up your stream of consciousness. Drag lines onto the page until something sticks.</p>
+  <p class="tagline">Cut-up your stream of consciousness. Drag lines into an arrangement until something sticks.</p>
 </header>
 
 <main>
   <section class="panel" id="inbox-panel">
     <div class="panel-header">
-      <h2>Inbox</h2>
+      <h2>Fragments</h2>
       <span class="count" id="inbox-count">0</span>
     </div>
 
@@ -33,21 +38,21 @@
 
   <section class="panel" id="page-panel">
     <div class="panel-header">
-      <h2>Page</h2>
+      <h2>Arrangement</h2>
       <span class="count" id="page-count">0</span>
     </div>
 
     <ul class="card-list" id="page-list" data-zone="page"></ul>
 
-    <div class="page-empty-hint" id="page-empty-hint">Drag lines here, or click a card's → to send it to the page.</div>
+    <div class="page-empty-hint" id="page-empty-hint">Drag lines here, or click a card's → to send it to the arrangement.</div>
   </section>
 </main>
 
 <footer>
   <div class="footer-group">
-    <button id="export-text-btn" title="Download the page as a plain text file">Export poem (.txt)</button>
-    <button id="export-json-btn" title="Save inbox + page as a file you can reload later">Save project (.json)</button>
-    <label class="file-label" for="import-json-input">Load project</label>
+    <button id="export-text-btn" title="Download the arrangement as a plain text file">Export arrangement (.txt)</button>
+    <button id="export-json-btn" title="Save fragments + arrangement as a file you can reload later">Save progress for later (.json)</button>
+    <label class="file-label" for="import-json-input">Load saved progress</label>
     <input type="file" id="import-json-input" accept="application/json" hidden>
   </div>
   <div class="footer-group">
