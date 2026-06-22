@@ -13,6 +13,7 @@
 <body>
 
 <header>
+  <button id="help-btn" class="help-btn" title="About this tool & how to use it">?</button>
   <img class="logo" src="favicon-512.png" alt="" width="56" height="56">
   <h1>Line Arranger</h1>
   <p class="tagline">Cut-up your stream of consciousness. Drag lines into an arrangement until something sticks.</p>
@@ -23,6 +24,7 @@
     <div class="panel-header">
       <h2>Fragments</h2>
       <span class="count" id="inbox-count">0</span>
+      <button id="shuffle-btn" title="Randomise the order of the fragments">Shuffle 🔀</button>
     </div>
 
     <div class="add-controls">
@@ -61,6 +63,28 @@
 </footer>
 
 <p class="credit">Made by <a href="https://github.com/ady" target="_blank" rel="noopener">Ady Coles</a></p>
+
+<div id="help-overlay" class="overlay hidden">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="help-title">
+    <button id="close-help" class="close-btn" title="Close" aria-label="Close">✕</button>
+    <h2 id="help-title">About Line Arranger</h2>
+
+    <p>Long before "remix culture" had a name, writers and musicians were cutting up their own words and putting them back together at random to see what showed up. The novelist <strong>William S. Burroughs</strong>, working with the artist Brion Gysin in the 1950s and 60s, sliced up pages of text and reassembled the strips in new orders — the "cut-up technique" — treating chance as a way to find images and connections a careful, linear draft would never produce.</p>
+
+    <p><strong>David Bowie</strong> picked up the same method for his lyrics, famously cutting sentences into individual lines or words, shuffling them, and building verses from whatever order they landed in — a way of short-circuiting his own habits as a writer. <strong>Genesis P-Orridge</strong>, of Throbbing Gristle and Psychic TV, used cut-up techniques across music, tape collage, and performance art in a similar spirit, treating disruption and randomness as a creative tool rather than a problem to solve.</p>
+
+    <p>This tool is a small digital version of that same idea: get your raw lines or words down, then let randomness and rearrangement do some of the work for you.</p>
+
+    <h3>How to use it</h3>
+    <ul>
+      <li>Paste a block of text into <strong>Fragments</strong> and click <em>Add All</em> (it splits one line per row), or add a single line/word with the quick-add field.</li>
+      <li>Click <em>Shuffle</em> to randomise the order of your fragments — a good way to notice lines you'd otherwise skip past.</li>
+      <li>Drag fragments into the <strong>Arrangement</strong> panel to build your piece, and drag to reorder within either list.</li>
+      <li>Double-click any line's text, in Fragments or the Arrangement, to edit it in place.</li>
+      <li>Everything autosaves in your browser. Use <em>Export arrangement (.txt)</em> to download your finished piece, or <em>Save progress for later (.json)</em> to save and reload an in-progress session.</li>
+    </ul>
+  </div>
+</div>
 
 <div id="toast"></div>
 

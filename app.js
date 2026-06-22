@@ -287,7 +287,22 @@
     return closest;
   }
 
+  function shuffleArray(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+  }
+
   // --- Wire up controls ---
+
+  document.getElementById("shuffle-btn").addEventListener("click", () => {
+    if (state.inbox.length < 2) return;
+    shuffleArray(state.inbox);
+    saveState();
+    render();
+    showToast("Fragments shuffled");
+  });
 
   document.getElementById("add-bulk-btn").addEventListener("click", () => {
     const count = addLinesToInbox(bulkInput.value);
@@ -347,6 +362,25 @@
     saveState();
     render();
     showToast("Cleared");
+  });
+
+  const helpOverlay = document.getElementById("help-overlay");
+
+  function openHelp() {
+    helpOverlay.classList.remove("hidden");
+  }
+
+  function closeHelp() {
+    helpOverlay.classList.add("hidden");
+  }
+
+  document.getElementById("help-btn").addEventListener("click", openHelp);
+  document.getElementById("close-help").addEventListener("click", closeHelp);
+  helpOverlay.addEventListener("click", (e) => {
+    if (e.target === helpOverlay) closeHelp();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !helpOverlay.classList.contains("hidden")) closeHelp();
   });
 
   function downloadFile(content, filename, mime) {
